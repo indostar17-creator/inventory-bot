@@ -25,7 +25,7 @@ A Telegram bot integrated with Gemini AI and Google Sheets to handle all stock m
 
 A second AI agent that acts as a business analyst when given competitor screenshots.
 
-![Market Analysis Workflow](canvas_analysis.png)
+![Market Analysis Workflow](analyze.png)
 
 - **Competitor Price Extraction:** Send a screenshot of any product listing from Shopee, Tokopedia, or other marketplaces. The AI reads the product name, market price, rating, and sales volume directly from the image.
 - **Internal Price Cross-Reference:** The system automatically pulls the product's cost price and current selling price from your own database to compare against market data.
@@ -41,32 +41,33 @@ The bot interface is in Indonesian, as it's designed for daily use by the end us
 **Image 1 — Natural Language Stock Input:**
 The user sends *"bro stok gula pasir masuk 20kg hari ini ya"* ("hey, 20kg of sugar just came in today"). No format required. The bot detects that price data is missing, asks for it, and confirms the save once answered.
 
-![Stock Input](input_text.png)
+![Stock Input](followup.png)
 
 **Image 2 — Single-Line Complete Input:**
 The user sends *"stok minyak goreng masuk 10 liter, modal 14000 jual 16000"* ("cooking oil stock in: 10 liters, cost 14000, sell 16000"). All fields provided in one message — no follow-up needed, bot saves immediately.
 
-![Single Line Input](input_complete.png)
+![Single Line Input](lengkap.png)
 
 **Image 3 — Restock Existing Product:**
 The user sends *"bang, stok minyak goreng masuk lagi 5 liter"* ("hey, another 5 liters of cooking oil just came in"). The bot recognizes this as an update to an existing product and increments the stock accordingly.
 
-![Restock](input_restock.png)
+![Restock](listed_stok.png)
 
 **Image 4 & 5 — Market Analysis from Competitor Screenshot:**
 The user sends a Shopee screenshot of Rose Brand Cooking Oil listed at Rp 45,125 with 519 units sold and a 4.8 rating. The bot cross-references the internal database (cost price: Rp 14,000), calculates margin scenarios at current vs. market price, and delivers a pricing recommendation with a buy/hold decision.
 
-![Market Analysis](analysis_result.png)
+![Market Analysis](analisis.png)
+![Market Analysis](analisis2.png)
 
 **Image 6 — Products Database (Google Sheets):**
 The live `products_clean` sheet showing all inventory with auto-calculated margin % and stock value columns. All data is written directly by n8n — zero manual entry.
 
-![Products Sheet](sheet_products.png)
+![Products Sheet](product.png)
 
 **Image 7 — Stock History Log:**
 The `stock_history` sheet showing every stock movement with timestamp, product name, old/new stock, difference, and change type (`input_baru` = new entry, `update_stok` = restock).
 
-![Stock History](sheet_history.png)
+![Stock History](historyy.png)
 
 ---
 
