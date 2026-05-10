@@ -1,7 +1,3 @@
-oke paham, jadi caption dan semua teks README pake english, tapi di bagian "Interface Context" lo tetap jelasin dalam english apa yang user ketik dalam bahasa indonesia di screenshot-nya. gas:
-
----
-
 # Charlotte: Smart Inventory & Market Analyst Bot 🤖📦
 
 Most inventory systems force you to open an app, fill a form, and click through menus just to log incoming stock. I built Charlotte to eliminate all of that — a Telegram bot that understands natural language, reads photos, and syncs everything to Google Sheets automatically. No forms. No manual entry. Just chat.
@@ -18,7 +14,7 @@ The system runs on two parallel pipelines triggered from a single Telegram entry
 
 A Telegram bot integrated with Gemini AI and Google Sheets to handle all stock management.
 
-![Inventory Input Workflow](canvas_input.png)
+![Inventory Input Workflow](canvas.png)
 
 - **Natural Language Input:** Send stock updates in any format — no fixed template required. The AI extracts all fields automatically.
 - **Smart Follow-Up:** If required fields are missing, the bot detects which ones are empty and asks specifically for what's needed. It remembers conversation context across multiple messages.
