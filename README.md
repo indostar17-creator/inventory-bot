@@ -134,7 +134,3 @@ The `stock_history` sheet showing every stock movement with timestamp, product n
 - [ ] Low stock alert — auto-notify when stock drops below threshold
 - [ ] Photo input for physical products
 - [ ] Monthly/weekly performance summary
-
----
-
-tinggal lo rename foto-fotonya sesuai placeholder yang ada, terus copy paste ini ke `README.md` di repo GitHub lo. next, LinkedIn post?
